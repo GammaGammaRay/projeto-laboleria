@@ -19,3 +19,13 @@ export async function insertCakeDB(cakeObj) {
 
   return existingCake.rows[0].id;
 }
+
+export async function getCakePrice(cakeId) {
+  const unitPrice = await db.query(
+    `SELECT price FROM cakes WHERE id = $1
+    `,
+    [cakeId]
+  );
+
+  return totalPrice = unitPrice * quantity;
+}
