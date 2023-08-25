@@ -1,4 +1,3 @@
-import { getCakePrice } from "../repositories/cakes.repository.js";
 import {
     getOrderByIdDB,
   getOrdersDB,
